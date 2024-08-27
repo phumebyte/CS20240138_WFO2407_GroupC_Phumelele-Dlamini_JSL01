@@ -3,7 +3,7 @@ function validateSyntax() {
     // Validation logic goes here
     let result = ''; // Placeholder for validation result
     // regex is a pattern used to match character combinations when processing text
-    const regex = /^pet_[a-zA-Z0-9]+$;
+    const regex = new RegExp('^pet_[a-zA-Z0-9]+$');
 
     if (regex.test(input)) {
         result = "Valid Syntax";
